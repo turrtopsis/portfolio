@@ -1,23 +1,40 @@
+
 .title {
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 60px;
-    &_promo{
-        font-size: 48px;
-        width: 535px;
-        margin-top: 10px;
-    }
-    &_about {
-        margin-top: 6px;
-        margin-bottom: 0;
-    }
-}
-.subtitle {
     position: relative;
-    padding-left: 10px;
     z-index: 2;
-    @include before_circle;
     font-weight: 700;
     font-size: 16px;
     line-height: 24px;
+    &_promo {
+        padding-left: 10px;
+        @include before_circle;
+    }
+    &_about{
+        margin-bottom: 0;
+        padding-left: 12px;
+        padding-top: 5px;
+        @include before_circle;
+        &:before {
+            top: 0;
+        }
+    }
 }
+.subtitle {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 60px;
+    &_promo {
+        margin-top: 10px;
+        width: 532px;
+        font-weight: 700;
+        font-size: 48px;
+        line-height: 60px;
+    }
+    &_about {
+        margin-top: 6px;
+    }
+}
+
+
+
+
