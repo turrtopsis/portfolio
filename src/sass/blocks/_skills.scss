@@ -1,0 +1,78 @@
+.skills {
+    padding-top: 120px;
+    &__wrapper {
+        margin-top: 60px;
+    }
+    &__metric {
+        margin-top: 120px;
+        display: grid;
+        grid-template-columns: repeat(3, 350px);
+        grid-template-rows: repeat(2, 70px);
+        column-gap: 45px;
+        row-gap: 30px;
+        &-item {
+            &_wrapper {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+            &_name {
+                padding-top: 8px;
+                padding-left: 13px;
+                position: relative;
+                font-weight: 700;
+                font-size: 14px;
+                line-height: 21px;
+                @include before_circle;
+            }
+            &_num {
+                padding-top: 8px;
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 21px;
+            }
+            &_chart {
+                position: relative;
+                margin-top: 20px;
+                span {
+                    position: absolute;
+
+                    display: block;
+                    height: 14px;
+                    border-radius: 4px;
+                    &:nth-child(1) {
+                        background-color: #E8E4DE;
+                        width: 100%;
+                    }
+                    &:nth-child(2) {
+                        background-color: $main-color;
+                    }
+                }
+            }
+        }
+    }
+    &__wrapper {
+        display: grid;
+        grid-template-columns: repeat(4, 270px);
+        grid-template-rows: repeat(2, 270px);
+        gap: 13px;
+    }
+    &__block {
+        padding: 30px 30px 25px 30px;
+        width: 270px;
+        height: 270px;
+        border: 1px solid #000000;
+        &-title {
+            margin-top: 20px;
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 21px;
+        }
+        &-text {
+            margin-top: 15px;
+            font-weight: 500;
+            font-size: 12px;
+            line-height: 18px;
+        }
+    }
+}
