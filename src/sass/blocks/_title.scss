@@ -5,7 +5,7 @@
     font-weight: 700;
     font-size: 16px;
     line-height: 24px;
-    &_promo, &_about, &_resume, &_skills, &_portfolio {
+    &_promo, &_about, &_resume, &_skills, &_portfolio, &_price {
         @include before_circle;
     }
     &_promo {
@@ -18,7 +18,7 @@
         padding-left: 12px;
         padding-top: 5px;
     }
-    &_resume, &_skills, &_portfolio {
+    &_resume, &_skills, &_portfolio, &_price {
         text-align: center;
         &:before {
             top: -5px;
@@ -55,8 +55,11 @@
     &_about {
         margin: 0;
     }
-    &_skills, &_portfolio {
+    &_skills, &_portfolio, &_price{
         margin: 0 auto;
+    }
+    &_price {
+        margin-top: 25px;
     }
 }
 
