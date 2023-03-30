@@ -5,7 +5,7 @@
     font-weight: 700;
     font-size: 16px;
     line-height: 24px;
-    &_promo, &_about, &_resume, &_skills, &_portfolio, &_price {
+    &_promo, &_about, &_resume, &_skills, &_portfolio, &_price, &_contacts {
         @include before_circle;
     }
     &_promo {
@@ -14,7 +14,7 @@
             top: -25%;
         }
     }
-    &_about{
+    &_about, &_contacts {
         padding-left: 12px;
         padding-top: 5px;
     }
@@ -52,7 +52,7 @@
     height: 3px;
     background-color: $main-color;
     border: none;
-    &_about {
+    &_about, &_contacts {
         margin: 0;
     }
     &_skills, &_portfolio, &_price{
