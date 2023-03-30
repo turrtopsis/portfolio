@@ -6,16 +6,20 @@
     &__metric {
         margin-top: 120px;
         display: grid;
-        grid-template-columns: repeat(3, 350px);
+        grid-template-columns: repeat(3, 1fr);
         grid-template-rows: repeat(2, 70px);
         column-gap: 45px;
         row-gap: 30px;
         &-item {
-            &_wrapper {
-                display: flex;
-                justify-content: space-between;
-                align-items: center;
-            }
+            display: grid;
+            grid-template: 36px 14px / 200px 34px;
+            justify-content: space-between;
+            align-content: space-between;
+            // &_wrapper {
+            //     display: flex;
+            //     justify-content: space-between;
+            //     align-items: center;
+            // }
             &_name {
                 padding-top: 8px;
                 padding-left: 13px;
@@ -31,36 +35,30 @@
                 font-size: 14px;
                 line-height: 21px;
             }
-            &_chart {
+            &_line {
                 position: relative;
-                margin-top: 20px;
+                background-color: #E8E4DE;
+                width: 350px;
+                height: 14px;
                 span {
                     position: absolute;
-
                     display: block;
                     height: 14px;
                     border-radius: 4px;
-                    &:nth-child(1) {
-                        background-color: #E8E4DE;
-                        width: 100%;
-                    }
-                    &:nth-child(2) {
-                        background-color: $main-color;
-                    }
+                    background-color: $main-color;
                 }
             }
+            
         }
     }
     &__wrapper {
         display: grid;
-        grid-template-columns: repeat(4, 270px);
+        grid-template-columns: repeat(4, 1fr);
         grid-template-rows: repeat(2, 270px);
         gap: 13px;
     }
     &__block {
         padding: 30px 30px 25px 30px;
-        width: 270px;
-        height: 270px;
         border: 1px solid #000000;
         &-title {
             margin-top: 20px;
