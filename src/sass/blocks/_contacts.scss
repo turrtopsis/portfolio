@@ -13,11 +13,14 @@
             object-fit: cover;
         }
     }
-    &__text, &__social {
+    &__text {
         margin-top: 20px;
         font-weight: 700;
         font-size: 14px;
         line-height: 21px;
+    }
+    &__social {
+        margin-top: 20px;
     }
     &__link {
         margin-right: 25px;
